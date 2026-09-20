@@ -11,6 +11,8 @@
   <strong>OWASP API Security</strong>
 </p>
 
+---
+
 ## Executive Summary
 
 This project demonstrates a structured Web Application and API Security Assessment of OWASP Juice Shop within an authorized local laboratory environment.
@@ -18,6 +20,18 @@ This project demonstrates a structured Web Application and API Security Assessme
 The assessment followed a practical security testing workflow covering reconnaissance, service and endpoint enumeration, vulnerability identification, manual validation, evidence collection, CVSS-based risk assessment, and remediation planning.
 
 The assessment focused on authentication, authorization, API security, injection vulnerabilities, security misconfigurations, and information exposure.
+
+---
+
+## Project Overview
+
+**OWASP Juice Shop** is an intentionally vulnerable web application used for security education and practical application-security testing.
+
+This project was conducted to develop hands-on experience in identifying, validating, documenting, and assessing common web application and API security weaknesses.
+
+The assessment involved analyzing HTTP requests and responses, identifying application and API endpoints, testing authorization controls, validating security findings, collecting reproducible evidence, and preparing remediation recommendations.
+
+---
 
 ## Objectives
 
@@ -33,7 +47,11 @@ The assessment focused on authentication, authorization, API security, injection
 * Perform risk assessment and CVSS-based severity classification
 * Provide appropriate remediation recommendations
 
+---
+
 ## Assessment Methodology
+
+The assessment followed a structured security testing workflow:
 
 **Reconnaissance**
 ↓
@@ -51,9 +69,11 @@ The assessment focused on authentication, authorization, API security, injection
 ↓
 **Remediation Recommendations**
 
+---
+
 ## Vulnerability Areas
 
-The assessment covers:
+The assessment investigated the following security areas:
 
 * BOLA / IDOR
 * Broken Authentication
@@ -62,34 +82,42 @@ The assessment covers:
 * Security Misconfiguration
 * Excessive Data Exposure
 
-## Tools
+---
 
-| Tool                         | Purpose                                    |
-| ---------------------------- | ------------------------------------------ |
-| Podman                       | Container deployment and management        |
-| OWASP Juice Shop             | Intentionally vulnerable target            |
-| Burp Suite Community Edition | Web application security testing           |
-| Burp Proxy                   | HTTP traffic interception                  |
-| Burp HTTP History            | Request and response analysis              |
-| Burp Target / Site Map       | Application and API enumeration            |
-| Burp Repeater                | Manual request modification and validation |
-| Nmap                         | Port and service discovery                 |
-| Web Browser                  | Application interaction                    |
+## Tools & Technologies
+
+| Tool / Technology                | Purpose                                                 |
+| -------------------------------- | ------------------------------------------------------- |
+| **OWASP Juice Shop**             | Intentionally vulnerable web application and API target |
+| **Podman**                       | Container deployment and laboratory environment         |
+| **Burp Suite Community Edition** | Web application security testing                        |
+| **Burp Proxy**                   | HTTP traffic interception                               |
+| **Burp HTTP History**            | Request and response analysis                           |
+| **Burp Target / Site Map**       | Application and API enumeration                         |
+| **Burp Repeater**                | Manual request modification and validation              |
+| **Nmap**                         | Port and service discovery                              |
+| **Web Browser**                  | Application interaction and testing                     |
+
+---
 
 ## Key Findings
 
 The assessment investigated the following security weaknesses:
 
-| Finding | Security Area | Assessment |
-|---|---|---|
-| BOLA / IDOR | API Authorization | Tested |
-| Broken Authentication | Authentication | Tested |
-| BFLA | Authorization | Tested |
-| Injection | Input Validation | Tested |
-| Security Misconfiguration | Application Security | Tested |
-| Excessive Data Exposure | Information Exposure | Tested |
+| Finding                   | Security Area        | Assessment Status |
+| ------------------------- | -------------------- | ----------------- |
+| BOLA / IDOR               | API Authorization    | Tested            |
+| Broken Authentication     | Authentication       | Tested            |
+| BFLA                      | Authorization        | Tested            |
+| Injection                 | Input Validation     | Tested            |
+| Security Misconfiguration | Application Security | Tested            |
+| Excessive Data Exposure   | Information Exposure | Tested            |
 
-Each finding was supported by evidence and evaluated according to its potential security impact.
+Each investigated finding was supported by assessment evidence and considered for security impact and remediation.
+
+> **Note:** Detailed technical evidence, risk ratings, and remediation recommendations are documented in the assessment report.
+
+---
 
 ## Selected Assessment Evidence
 
@@ -99,40 +127,78 @@ Each finding was supported by evidence and evaluated according to its potential 
 
 ### Burp Suite Traffic Analysis
 
-![Burp Suite Request](Evidence/Reconnaissance/06-burp-target-site-map.png)
+![Burp Suite Target Site Map](Evidence/Reconnaissance/06-burp-target-site-map.png)
 
-### Vulnerability Validation
+### BOLA / IDOR Validation
 
 ![BOLA Validation](Evidence/BOLA-IDOR/01-bola-baseline-request.png)
 
+Additional evidence is available in the [`Evidence`](./Evidence/) directory.
+
+---
+
 ## Environment
 
-**Target:** OWASP Juice Shop
-**Target URL:** `http://localhost:3000`
-**Protocol:** HTTP
-**Port:** 3000
-**Deployment:** Podman
-**Environment:** Local authorized laboratory environment
+| Configuration   | Details                     |
+| --------------- | --------------------------- |
+| **Target**      | OWASP Juice Shop            |
+| **Target URL**  | `http://localhost:3000`     |
+| **Protocol**    | HTTP                        |
+| **Port**        | 3000                        |
+| **Deployment**  | Podman                      |
+| **Environment** | Authorized local laboratory |
 
-## Report
+---
 
-The complete assessment report is available in the [`Report`](./Report/) directory.
+## Project Structure
+
+```text
+owasp-juice-shop-security-assessment/
+│
+├── Evidence/
+│   ├── Reconnaissance/
+│   ├── BOLA-IDOR/
+│   ├── Authentication/
+│   ├── BFLA/
+│   ├── Injection/
+│   └── Security-Misconfiguration/
+│
+├── Report/
+│   └── Web_Application_API_Security_Assessment.pdf
+│
+├── project-banner.png
+└── README.md
+```
+
+---
+
+## Assessment Report
+
+The complete technical assessment report contains the detailed methodology, vulnerability analysis, evidence, risk assessment, CVSS evaluation, and remediation recommendations.
+
+📄 **[View the Assessment Report](./Report/)**
+
+🔎 **[View Assessment Evidence](./Evidence/)**
+
+---
 
 ## Skills Demonstrated
 
-- Web Application Security Testing
-- API Security Testing
-- Reconnaissance & Enumeration
-- HTTP Request/Response Analysis
-- Authentication Testing
-- Authorization Testing
-- BOLA / IDOR Testing
-- BFLA Testing
-- Injection Testing
-- Vulnerability Validation
-- CVSS Risk Assessment
-- Security Documentation
-- Remediation Planning
+* Web Application Security Testing
+* API Security Testing
+* Reconnaissance & Enumeration
+* HTTP Request/Response Analysis
+* Authentication Testing
+* Authorization Testing
+* BOLA / IDOR Testing
+* BFLA Testing
+* Injection Testing
+* Vulnerability Validation
+* CVSS Risk Assessment
+* Security Documentation
+* Remediation Planning
+
+---
 
 ## Disclaimer
 
@@ -140,8 +206,11 @@ This project was conducted strictly within an authorized local laboratory enviro
 
 No unauthorized systems or third-party applications were targeted.
 
+---
+
 ## Repository
 
-This repository contains the assessment methodology, evidence, report, and supporting documentation.
+This repository contains the assessment methodology, technical evidence, security findings, assessment report, and supporting documentation.
 
-[View the complete project on GitHub](https://github.com/SethuBandara/owasp-juice-shop-security-assessment)
+**GitHub Repository:**
+https://github.com/SethuBandara/owasp-juice-shop-security-assessment

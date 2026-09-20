@@ -95,15 +95,15 @@ Each finding was supported by evidence and evaluated according to its potential 
 
 ### Reconnaissance
 
-![Nmap Reconnaissance](README-Evidence/Reconnaissance/02-nmap-service-discovery.png)
+![Nmap Reconnaissance](Evidence/Reconnaissance/02-nmap-service-discovery.png)
 
 ### Burp Suite Traffic Analysis
 
-![Burp Suite Request](README-Evidence/Reconnaissance/06-burp-target-site-map.png)
+![Burp Suite Request](Evidence/Reconnaissance/06-burp-target-site-map.png)
 
 ### Vulnerability Validation
 
-![BOLA Validation](README-Evidence/BOLA-IDOR/01-bola-baseline-request.png)
+![BOLA Validation](Evidence/BOLA-IDOR/01-bola-baseline-request.png)
 
 ## Environment
 

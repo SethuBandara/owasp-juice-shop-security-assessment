@@ -294,7 +294,7 @@ The complete assessment report documents the security testing methodology, recon
 
 ### 📄 Full Technical Report
 
-**[View Web Application & API Security Assessment Report](Report/Web_Application_API_Security_Assessment.pdf)**
+**[View Web Application & API Security Assessment Report](./Report/Web_Application_API_Security_Assessment.pdf)**
 
 ### 🔎 Supporting Evidence
 

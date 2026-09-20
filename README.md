@@ -19,14 +19,6 @@ The assessment followed a practical security testing workflow covering reconnais
 
 The assessment focused on authentication, authorization, API security, injection vulnerabilities, security misconfigurations, and information exposure.
 
-# OWASP Juice Shop — Web Application & API Security Assessment
-
-## Overview
-
-This project documents a practical Web Application and API Security Assessment conducted against **OWASP Juice Shop** within an authorized local laboratory environment.
-
-The assessment focuses on identifying, validating, and documenting common web application and API security weaknesses using a structured penetration-testing methodology.
-
 ## Objectives
 
 * Perform target reconnaissance and service discovery

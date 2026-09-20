@@ -1,3 +1,24 @@
+<p align="center">
+  <img src="project-banner.png" alt="OWASP Juice Shop Web Application and API Security Assessment">
+</p>
+
+<h1 align="center">OWASP Juice Shop – Web Application & API Security Assessment</h1>
+
+<p align="center">
+  <strong>Burp Suite</strong> •
+  <strong>Nmap</strong> •
+  <strong>Podman</strong> •
+  <strong>OWASP API Security</strong>
+</p>
+
+## Executive Summary
+
+This project demonstrates a structured Web Application and API Security Assessment of OWASP Juice Shop within an authorized local laboratory environment.
+
+The assessment followed a practical security testing workflow covering reconnaissance, service and endpoint enumeration, vulnerability identification, manual validation, evidence collection, CVSS-based risk assessment, and remediation planning.
+
+The assessment focused on authentication, authorization, API security, injection vulnerabilities, security misconfigurations, and information exposure.
+
 # OWASP Juice Shop — Web Application & API Security Assessment
 
 ## Overview
@@ -20,18 +41,23 @@ The assessment focuses on identifying, validating, and documenting common web ap
 * Perform risk assessment and CVSS-based severity classification
 * Provide appropriate remediation recommendations
 
-## Methodology
+## Assessment Methodology
 
-The assessment followed these major phases:
-
-1. Reconnaissance
-2. HTTP Traffic Interception
-3. API Enumeration
-4. Endpoint Classification
-5. Vulnerability Assessment
-6. Manual Validation
-7. Risk Assessment
-8. Remediation Planning
+**Reconnaissance**
+↓
+**Service & Endpoint Enumeration**
+↓
+**Application/API Analysis**
+↓
+**Vulnerability Identification**
+↓
+**Manual Validation**
+↓
+**Evidence Collection**
+↓
+**CVSS Risk Assessment**
+↓
+**Remediation Recommendations**
 
 ## Vulnerability Areas
 
@@ -58,6 +84,35 @@ The assessment covers:
 | Nmap                         | Port and service discovery                 |
 | Web Browser                  | Application interaction                    |
 
+## Key Findings
+
+The assessment investigated the following security weaknesses:
+
+| Finding | Security Area | Assessment |
+|---|---|---|
+| BOLA / IDOR | API Authorization | Tested |
+| Broken Authentication | Authentication | Tested |
+| BFLA | Authorization | Tested |
+| Injection | Input Validation | Tested |
+| Security Misconfiguration | Application Security | Tested |
+| Excessive Data Exposure | Information Exposure | Tested |
+
+Each finding was supported by evidence and evaluated according to its potential security impact.
+
+## Selected Assessment Evidence
+
+### Reconnaissance
+
+![Nmap Reconnaissance](README-Evidence/nmap-recon.png)
+
+### Burp Suite Traffic Analysis
+
+![Burp Suite Request](README-Evidence/burp-request.png)
+
+### Vulnerability Validation
+
+![BOLA Validation](README-Evidence/bola-validation.png)
+
 ## Environment
 
 **Target:** OWASP Juice Shop
@@ -71,8 +126,30 @@ The assessment covers:
 
 The complete assessment report is available in the [`Report`](./Report/) directory.
 
+## Skills Demonstrated
+
+- Web Application Security Testing
+- API Security Testing
+- Reconnaissance & Enumeration
+- HTTP Request/Response Analysis
+- Authentication Testing
+- Authorization Testing
+- BOLA / IDOR Testing
+- BFLA Testing
+- Injection Testing
+- Vulnerability Validation
+- CVSS Risk Assessment
+- Security Documentation
+- Remediation Planning
+
 ## Disclaimer
 
 This project was conducted strictly within an authorized local laboratory environment for educational and security-testing purposes.
 
 No unauthorized systems or third-party applications were targeted.
+
+## Repository
+
+This repository contains the assessment methodology, evidence, report, and supporting documentation.
+
+[View the complete project on GitHub](https://github.com/SethuBandara/owasp-juice-shop-security-assessment)
